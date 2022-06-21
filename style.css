@@ -1,0 +1,284 @@
+#hero {
+  background: url(images/hero.gif);
+  height: 600px;
+  background-size: cover;
+}
+
+#hero p {
+  color: var(--whiteText);
+  font-size: 3rem;
+}
+#hero span {
+  color: #f47c7c;
+}
+#hero .container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.logos {
+  margin-top: 30px;
+}
+.logos i {
+  color: var(--whiteText);
+  font-size: 4rem;
+  margin: 20px;
+}
+
+#section2 img {
+  width: 250px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+#section2 .container {
+  justify-content: space-between;
+}
+.profile {
+  width: 45%;
+  text-align: center;
+}
+.profile h1 {
+  color: #1e90ff;
+  margin: 10px 0 10px 0;
+}
+.specialization {
+  width: 45%;
+}
+.specialization p {
+  margin-top: 30px;
+}
+.bar-container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  background-color: #1e90ff;
+}
+
+.html {
+  width: 90%;
+}
+.css {
+  width: 90%;
+}
+.js {
+  width: 65%;
+}
+.php {
+  width: 50%;
+}
+
+#section3 {
+  background-color: var(--darkColor);
+}
+#section3 .container {
+  color: var(--whiteText);
+}
+
+.icons {
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section3-header {
+  text-align: center;
+}
+.section3-header h1 {
+  font-size: 3rem;
+  margin-bottom: 80px;
+}
+.icons-i {
+  width: 250px;
+  margin: 20px auto;
+}
+
+.icons i {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.icons-bg {
+  background-color: #1e90ff;
+  display: inline-block;
+  padding: 30px 40px 15px 40px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  margin-bottom: 20px;
+}
+
+#section4 .container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.section4-header h1 {
+  color: var(--darkColor);
+}
+.projects img {
+  max-width: 800px;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.projects button {
+  padding: 10px 30px;
+  font-family: var(--mainFont);
+  background-color: transparent;
+  border: 3px solid #1e90ff;
+  color: #1e90ff;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+  margin-top: 20px;
+}
+
+.projects button:hover {
+  background-color: #1e90ff;
+  color: var(--whiteText);
+}
+#section5 {
+  background-color: var(--darkColor);
+  clip-path: polygon(
+    0% 0%,
+    10% 7%,
+    50% 34%,
+    90% 7%,
+    100% 0%,
+    100% 100%,
+    0 100%
+  );
+}
+#section5 {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+#section5 .container {
+  color: var(--whiteText);
+  flex-direction: column;
+  text-align: center;
+}
+
+#section5 .socmed i {
+  font-size: 2rem;
+  margin: 40px;
+}
+
+#section5 a {
+  color: var(--whiteText);
+}
+
+#section5 a:hover {
+  color: #1e90ff;
+  transition: 0.5s ease-in-out;
+}
+
+#section5 p {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  #section2 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile {
+    width: 80%;
+  }
+  .specialization {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projects img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #section5 {
+    clip-path: polygon(
+      0% 0%,
+      5% 2%,
+      50% 20%,
+      95% 2%,
+      100% 0%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .projects img {
+    width: 400px;
+  }
+  .projects h2 {
+    font-size: 1rem;
+  }
+  .projects {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #section5 .socmed i {
+    font-size: 2rem;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .projects img {
+    width: 300px;
+  }
+  .projects {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #hero p {
+    font-size: 2.2rem;
+  }
+  #section5 {
+    clip-path: polygon(
+      0% 0%,
+      0% 0%,
+      50% 10%,
+      100% 0%,
+      100% 0%,
+      100% 100%,
+      0 100%
+    );
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #section2 img {
+    width: 150px;
+  }
+  .profile h1 {
+    font-size: 2rem;
+  }
+  #section5 p {
+    font-size: 0.8rem;
+  }
+  #section5 .socmed i {
+    font-size: 1.8rem;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .projects img {
+    width: 250px;
+  }
+  .projects {
+    text-align: center;
+  }
+}
